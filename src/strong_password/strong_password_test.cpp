@@ -2,6 +2,6 @@
 
 #include <strong_password/strong_password.hpp>
 
-TEST(IntegrationTest, IsWorking) {
+TEST(StrongPassword, IsWorking) {
   EXPECT_EQ(example(), 42);
 }

@@ -14,7 +14,7 @@ function(add_gtest_test test_name test_src)
     target_link_libraries(${test_name} PRIVATE
             gtest
             gtest_main
-            yacppbp
+            strong_password
             )
 
     gtest_discover_tests(${test_name}

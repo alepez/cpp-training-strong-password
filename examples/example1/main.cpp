@@ -1,4 +1,4 @@
-#include "yacppbp/yacppbp.hpp"
+#include "strong_password/strong_password.hpp"
 #include <iostream>
 
 int main(int argc, const char* argv[]) {

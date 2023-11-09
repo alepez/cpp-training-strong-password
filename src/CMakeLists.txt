@@ -1,1 +1,1 @@
-add_subdirectory(yacppbp)
+add_subdirectory(strong_password)
