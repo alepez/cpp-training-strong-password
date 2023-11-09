@@ -14,8 +14,3 @@ add_subdirectory(cmake)
 add_subdirectory(src)
 add_subdirectory(tests)
 add_subdirectory(examples)
-
-# Hide third party targets, so IDEs like Visual Studio aren't cluttered with
-# too many targets.
-set_property(GLOBAL PROPERTY USE_FOLDERS ON)
-#set_target_properties(gmock gmock_main gtest gtest_main PROPERTIES FOLDER hidden_targets)
