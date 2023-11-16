@@ -1,3 +1,8 @@
+# This must be first, it must enable compile options for everything
+include(sanitizer.cmake)
+
+include(coverage.cmake)
+
 include(analysis.cmake)
 include(clang-format.cmake)
 include(clang-tidy.cmake)

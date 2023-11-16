@@ -23,6 +23,8 @@ target_link_libraries(strong_password
 
 target_analysis_setup(strong_password)
 
+target_enable_coverage(strong_password)
+
 add_catch2_test(strong_password_test strong_password_test.cpp)
 target_link_libraries(strong_password_test PRIVATE strong_password)
 
