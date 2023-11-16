@@ -1,4 +1,4 @@
-add_gtest_test(integration_test integration_test.cpp)
+add_catch2_test(integration_test integration_test.cpp)
 
 target_link_libraries(integration_test
         PRIVATE strong_password
