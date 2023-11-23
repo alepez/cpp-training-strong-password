@@ -1,12 +1,12 @@
 function(clang_tidy_check_setup prefix)
-    add_custom_command(OUTPUT ${prefix}_clang_tidy_report.txt
+    add_custom_target(${prefix}_clang_tidy_report.txt
             COMMAND
             clang-tidy
             -p ${CMAKE_BINARY_DIR} > ${prefix}_clang_tidy_report.txt
             ${clang_tidy_sources}
             )
 
-    add_custom_command(OUTPUT ${prefix}_clang_tidy_report.xml
+    add_custom_target(${prefix}_clang_tidy_report.xml
             COMMAND
             clang-tidy-to-junit ${CMAKE_SOURCE_DIR} < ${prefix}_clang_tidy_report.txt >  ${prefix}_clang_tidy_report.xml
             DEPENDS ${prefix}_clang_tidy_report.txt
