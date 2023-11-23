@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.12)
 
-project(strong_password)
+project(training_strong_password)
 
 set(CMAKE_CXX_STANDARD 17)
 
