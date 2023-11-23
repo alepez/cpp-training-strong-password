@@ -3,5 +3,6 @@ add_executable(example1
         )
 
 target_link_libraries(example1
-        PRIVATE strong_password
+        PRIVATE fmt::fmt
+        PRIVATE spdlog::spdlog
         )
